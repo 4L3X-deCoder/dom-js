@@ -1,0 +1,20 @@
+.big{
+    font-size: 48px;
+}
+.purple{
+    color: purple;
+}
+.block{
+    width: 100px;
+    height: 100px;
+    border: 1px dashed red;
+}
+.elem{
+    font-style: italic;
+    color: red;
+}
+.container{
+    width: 200px;
+    height: 200px;
+    background: aqua;
+}
