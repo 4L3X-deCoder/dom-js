@@ -86,7 +86,7 @@ const content = document.querySelector('.content');
 const loremsInContent = content.querySelectorAll('p');
 console.log(loremsInContent);
 
-/*Выбор предков*/
+/*Выбор предков.*/
 let form = btn.closest('form'); //поиск ближайшего предка по селектору
 form.style.border = '2px dotted orange';
 
@@ -99,3 +99,11 @@ btn.addEventListener('click', function(event){
     const pass = document.querySelector('input[type=password]').value;
     console.log(pass);
 });
+
+/*Удаление тегов.*/
+//10.1 Живая коллекция
+const texts = document.querySelector('.content').childNodes;
+console.log(texts);
+const p1 = document.querySelector('p'); //выбор первого параграфа в элементе
+p1.outerHTML = ""; //удаление тега - первого параграфа
+console.log(paragraphs);
